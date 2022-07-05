@@ -24,8 +24,14 @@ $(function(){
       if(res.status !==0) {
         return layer.msg(res.message)
       }
+      $('.register .layui-form')[0].reset()
+      layer.msg('注册成功')
+      setTimeout(function(){
+        $('.toLogin').click()
+      },2000)
+      
     })
-    $(this)[0].reset()
+    
   })
 
   //如下是登录的事件
@@ -42,8 +48,12 @@ $(function(){
         return layer.msg('用户名或者密码出现错误，'+res.message)
       }
 
+      $('.login .layui-form')[0].reset()
+      layer.msg('登陆成功')
+      localStorage.setItem('token',res.token)
+      location.href='index.html'
     })
-    $(this)[0].reset()
+    
   })
 
   //from 表单的验证规则
@@ -53,7 +63,7 @@ $(function(){
       ,'密码必须6到12位，且不能出现空格'
     ] ,
     repwd:function(value){
-     const pwd= $('.register [name="prepassword"]').val()
+     const pwd= $('.register [name="repassword"]').val()
       if(pwd !==value){return  '两次结果不一样'}
     }
   })

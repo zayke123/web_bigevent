@@ -1,0 +1,30 @@
+{
+  "id": "3500942",
+  "name": "web_bigevent",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "145436",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "827977",
+      "name": "文章1",
+      "font_class": "wenzhang1",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "830930",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    }
+  ]
+}
