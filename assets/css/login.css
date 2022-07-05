@@ -1,0 +1,49 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../images/login_bg.jpg) no-repeat;
+  background-size: cover;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* 如下是大师加图标的样式 */
+.top {
+  width: 90%;
+  height: 80px;
+  margin: 20px auto;
+}
+
+/* 如下是登录和注册页面样式 */
+.loginAndRegister {
+  width: 400px;
+  background-color: white;
+  margin: 100px auto;
+  padding: 15px 20px;
+}
+.loginAndRegister .titlle {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.layui-form-item button {
+  width: 100%;
+}
+.layui-form-item {
+  position: relative;
+}
+.layui-form-item i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.layui-input {
+  padding-left: 33px;
+}
+.register {
+  display: none;
+}
