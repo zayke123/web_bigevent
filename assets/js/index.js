@@ -10,7 +10,7 @@ $(function(){
       //   Authorization:localStorage.getItem('token')
       // },
       success: function(res){
-        console.log(res);
+      
         if(res.status !==0){
           return layer.msg('获取用户的基本信息')
         }
@@ -25,12 +25,15 @@ $(function(){
     const name=user.nickname || user.username
     // user.user_pic='./assets/images/sample.jpg'
     $('#welcome').html(name)
+    console.log(user.user_pic);
     if( user.user_pic ===null){
       $('.layui-nav-img').hide()
+      $('.text-avatar').show()
       const first=name[0].toUpperCase()
       $('.text-avatar').html(first)
     }else{
       $('.text-avatar').hide()
+      $('.layui-nav-img').show()
       $('.layui-nav-img').attr('src',user.user_pic)
     }
     
