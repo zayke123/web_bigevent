@@ -4,7 +4,7 @@ $.ajaxPrefilter(function (options) {
   // 配置路径
   options.url='http://www.liulongbin.top:3007'+options.url
 
-  // 身份认证
+  // 身份认证的样式
   if(options.url.indexOf('/my') !==-1){
       options.headers={
         Authorization: localStorage.getItem('token') ||''

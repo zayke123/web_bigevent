@@ -36,7 +36,7 @@ $(function(){
     
   }
 
-  // 退出的效果
+  // 退出按钮的效果
   $('#butlogout').on('click', function(){
     layer.confirm('是否确认退出？', {icon: 3, title:'退出提示'}, function(index){
       
