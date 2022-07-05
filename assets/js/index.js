@@ -1,7 +1,7 @@
 $(function(){
   getUserInfo()
 
-  // 获取页面的用户信息
+  // 获取页面用户信息
   function getUserInfo(){
     $.ajax({
       method: "GET",
