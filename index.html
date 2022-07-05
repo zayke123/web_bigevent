@@ -30,7 +30,7 @@
             </dl>
           </li>
           <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
-            <a href="javascript:;">
+            <a href="javascript:;" id="butlogout">
               <span class="iconfont icon-tuichu"></span>
               退出
             </a>
@@ -48,8 +48,8 @@
             />
             <span class="text-avatar">Y</span>
             <div class="user">
-              <span>欢迎</span>
-              <span>杨哥</span>
+              <span style="margin-right: 5px">欢迎</span>
+              <span id="welcome">杨哥</span>
             </div>
           </div>
           <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
@@ -126,7 +126,12 @@
       </div>
     </div>
   </body>
+  <!-- 导入的layui的js文件 -->
   <script src="./assets/lib/layui/layui.all.js"></script>
+  <!-- 导入的jquery的js文件 -->
   <script src="./assets/lib/jquery.js"></script>
+  <!-- 导入的路径封装的js文件 -->
+  <script src="./assets/js/baseAPI.js"></script>
+  <!-- 导入的本地书写的js文件 -->
   <script src="./assets/js/index.js"></script>
 </html>
