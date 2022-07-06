@@ -25,7 +25,7 @@ $(function(){
     const name=user.nickname || user.username
     // user.user_pic='./assets/images/sample.jpg'
     $('#welcome').html(name)
-    console.log(user.user_pic);
+   
     if( user.user_pic ===null){
       $('.layui-nav-img').hide()
       $('.text-avatar').show()
